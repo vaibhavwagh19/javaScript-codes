@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array</title>
+</head>
+<body>
+	<div id="output" style=" font-weight: bold; font-size:40px; font-family: 'Trebuchet ms';"></div>
+
+	<script type="text/javascript">
+		var var1 = new Array();
+		var1 = [1,2,3,4,5];
+
+		var var2 = new Array();
+		var2[0] = "hello";
+		var2[1] = "world";
+		var2[3] = "how are you ";
+
+		alert(var1[0]+var1[1]);
+		alert(var2);
+
+		var d = "";
+		var colors = new Array("red","green","blue","orange","purple","yellow") 
+
+		for (var i = 0; i < var2.length; i++) {
+			d += "<p style='color:"+colors[i]+"'>"+var2[i] + "</p>";
+		} 
+
+		document.getElementById('output').innerHTML = d ;
+
+	</script>
+
+
+</body>
+</html>

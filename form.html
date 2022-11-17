@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Form </title>
+</head>
+<body>
+<form method="post" action="">
+	Enter First No. <input type="number" id="fn" placeholder="Enter First No.">
+	<br><br>
+	Enter Second No. <input type="number" id="sn" placeholder="Enter Second No.">
+	<br><br>
+	Enter Third No. <input type="number" id="tn" placeholder="Enter Third No.">
+	<br><br>
+	<input type="button" value="CHECK" onClick="greatest()">
+
+</form>
+<script type="text/javascript">
+
+function greatest()
+{  
+
+	var n1 = document.getElementById('fn').value;
+	var n2 = document.getElementById('sn').value;
+	var n3 = document.getElementById('tn').value;
+
+	
+	if(n1>n2)
+	{
+		if(n1>n3){
+			document.write("<h1>"+n1+" is greater than "+n2+" and "+n3"</h1>" );
+		}
+		else{
+			document.write("<h1>"+n3+" is greater than "+n1" and "+n2"");
+		}
+	else
+	{
+		if(n2>n3)
+		{
+			document.write("<h1>"+n2+" is greater than "+n1+" and "+n3"</h1>")
+		}
+		else
+		{
+			document.write("<h1>"+n3+" is greater than "+n1" and "+n2"");
+		}
+		
+	}
+
+	
+}
+	alert(n1);
+	alert(n2);
+	alert(n3);
+</script>
+</body>
+</html>

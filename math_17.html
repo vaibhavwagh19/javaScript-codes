@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		div{
+			font-size: 50px;
+			font-weight: bold;
+			font-family: "Trebuchet ms";
+			color: #bbcc3d;
+		}
+	</style>
+	<title>math_operation</title>
+</head>
+<body>
+	<div class="div">MATH operations in JS</div>	
+	<div id="output" class="div" ></div>
+	<script type="text/javascript">
+		var pi = Math.PI;
+		var round = Math.round(99.99);
+		var floor = Math.floor(4.11);
+	 	var min  =  Math.min(10,20,30,40,50);
+	 	var max  = Math.max(10,20,30,40,50);
+	 	var truncate = Math.trunc(4.7);
+	 	var power  = Math.pow(2,6);
+	 	var sqrt = Math.sqrt(25);
+	 	var random = Math.random();
+	 	var random1 = Math.floor(Math.random()*999999)
+
+	 	document.getElementById('output').innerHTML = "PI : "+pi+"<br>"+"Round : "+round+"<br>"+"Floor : "+floor+"<br>"+"Min : "+min+"<br>"+"Max :"+max+"<br>"+"Truncate :"+truncate+"<br>"+"Power : "+power+"<br>"+"Square : "+sqrt+"<br>"+"Random : "+random+"<br>"+"Random Range : "+random1+"<br>";
+	</script>
+</body>
+</html>

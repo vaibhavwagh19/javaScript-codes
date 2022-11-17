@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Random Between</title>
+	<style type="text/css">
+		body
+		{
+			font-family: 'Trebuchet Ms'
+			font-Size: 20px;
+
+		}
+		input
+		{
+           font-family: 'Trebuchet Ms'
+           font-Size: 30px;
+		}
+		.output
+		{
+			font-family: 'Trebuchet Ms'
+			font-Size:40px;
+		}
+	</style>
+</head>
+<body>
+<div align ="center">
+<h1>Random no.Gnerator</h1>
+<input type="text" id= "min" placeholder="Enter Minimum No."> 
+<br><br>
+<input type="text" id= "max" placeholder="Enter Maximum No."> 
+<br><br>
+<input type="button" value= "Generate" onclick="" ="Enter Maximum No."> 
+<br><br>
+
+
+	
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<br><br>
+<input type="button" value="Generate" onclick=".random_gen()">
+<br><br>
+<div id ="output" class="output"></div>
+</div>
+<script type="text/javascript">
+	function random_gen(){
+	var min = parseInt(document.getElementById('min').value);
+	var max = parseInt(document.getElementById('max').value);
+	var randomNo = Math.floor(Math.random()*(max - min +1)) +min;
+	document.getElementById('output').innerHTML = randomNo;
+
+	}
+</script>
+
+
+
+
